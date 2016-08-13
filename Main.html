@@ -12,13 +12,15 @@
     <script src="html2canvas-master/dist/html2canvas.js"></script>
     <script src="countClicks.js"></script> <!--counts and stores users clicks and their location-->
     <script src="windowSize.js"></script> <!--get window size and keeps track of screen changes-->
-    <script src="screenCapture.js"></script><!--captures the user screen needs to be called on every window size change-->
+    <script src="drawHeatMap.js"></script>
+   <!-- <script src="screenCapture.js"></script><!--captures the user screen needs to be called on every window size change-->
 </head>
 <body>
 hellos
 
 </body>
 <script>
+  /*
     //a script to capture the scree using html2canvas
     //need to keep going over it to make sure how it works
     // also need to save the picture on the server side and not like this
@@ -39,13 +41,8 @@ hellos
         }
     });
 
+*/
 
-    //function to draw the heat map will move to its on page
-    function drawHeatMap(clicks){
-        for (var i=0; i < clicks.length; i++){
-            $('body').html("<div style='position: absolute; left: 667px; top: 219px; width: 4px; height: 4px; background-color: red;'></div>");
-        }
-    };
 
 </script>
 </html>
